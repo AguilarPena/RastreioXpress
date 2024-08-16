@@ -1,0 +1,348 @@
+/*Global reset - normalizar os comportamento dos elementos HTML*/
+*{
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+}
+
+/*Adiciona um espaço no topo do conteúdo para que não fique escondido atrás do menu*/
+body {
+    margin: 0;
+    padding-top: 60px;
+}
+
+/*Estilizar Menu*/
+nav {
+    position: fixed; 
+    top: 0;
+    width: 100%; 
+    background-color: white;
+    padding: 20px 0;
+    border-bottom: 1px solid rgb(179, 178, 178);
+    z-index: 1000; /*Deixar menu acima dos outros elementos*/
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #004AAD;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    opacity: 0.5;
+    transition: 0.5s;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 40px; 
+    margin-right: 10px; 
+}
+
+.logo p {
+    color:  #004AAD;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+
+.navButtons a {
+    text-decoration: none; 
+    margin-left: 10px; 
+}
+
+/*Estização do botão login*/
+.btLogin button {
+    padding: 8px 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    border-radius: 5px;
+    color: #1A9047;
+    background-color: white;
+    border: 1px solid #1A9047;
+}
+
+/*Aplicar transição no botão*/
+.btLogin :hover {
+    transition: 0.3s ease;
+    background-color: #1A9047;
+    color: white;
+    border: none;
+}
+
+/*Estilização do botão cadastrar*/
+.btCadastro button {
+    padding: 8px 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    border-radius: 5px;
+    color: #ffffff;
+    background-color: #1A9047; 
+    border: none;
+}
+
+/*Aplicar transição no botão*/
+.btCadastro :hover {
+    transition: 0.3s ease;
+    background-color: #005822;
+}
+
+/*Estilizar section Home*/
+.home{
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+    gap: 10px;
+}
+
+.home h1{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #2BC866;
+    font-size: 2.5rem;
+    margin: 40px;
+}
+
+/*Estilizando caixa de entrada de texto*/
+.boxHome{
+    padding: 5px;
+    color: rgb(158, 160, 182);
+    border: 1px solid rgb(200, 201, 217);
+    border-radius: 3px;
+    outline: none;
+    width: 370px; 
+    height: 30px; 
+}
+
+/*Estilizando botão Rastrear da section Home*/
+.btHome button{
+    padding: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    border-radius: 3px;
+    color:white;
+    background-color: rgb(135, 131, 154);
+    text-transform: uppercase;
+    width: 130px;
+    height: 30px; 
+    border: none;
+    outline: none;
+}
+
+/*Aplicar transição no botão*/
+.btHome :hover{
+    background-color: aliceblue;
+    color: black;
+    border: 1px solid black;
+}
+
+.home img{
+    width: 1000px;
+    justify-content: center;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+/*Estilizar section Sobre*/
+.sobre{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*Estilizando textos*/
+.sobre h1{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #2BC866;
+    font-size: 2.5rem;
+    margin: 40px;
+}
+
+.sobre h2{
+    color: #2BC866;
+    margin: 40px;   
+}
+
+/*Estilizando imagens*/
+.imgSobre {
+    font-family: Arial, Helvetica, sans-serif;
+    display: inline-block;
+    width: 20%; 
+    vertical-align: top; 
+    margin: 10px; 
+    text-align: center;
+}
+
+.imgSobre h3{
+    color: #2BC866;
+    margin-bottom: 25px;
+}
+
+.imgSobre img {
+    width: 100%; 
+    height: auto;
+    display: block;
+    margin-bottom: 10px;
+}
+
+/*Estilizar botão Cadastrar-se da section Sobre*/
+.btSobre button{
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    border-radius: 3px;
+    color: #ffffff;
+    background-color: #2BC866;
+    text-transform: uppercase;
+    width: 160px; 
+    height: 30px; 
+    border: none;
+    outline: none;
+    opacity: 0.7;
+}
+
+/*Aplicar transição no botão*/
+.btSobre :hover{
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+/*Estilizar section Parcerias*/
+
+/*Estilizando imagens*/
+.imgParcerias{
+    padding: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    border-radius: 50px;
+    background-color: #ffffff;
+    background-color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    width: 700px;     
+    height: 60px; 
+    border: none;
+    outline: none;
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    gap: 15px; 
+}
+
+.imgParcerias img{
+    max-height: 20px;
+    width: auto;
+}
+
+/*Estilizção do bloco de logos das empresas parceiras*/
+.bloco{
+    display: flex; 
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #2BC866;
+    padding: 10%;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    align-items: center; 
+    justify-content: space-between; 
+}
+
+/*Estilizando textos*/
+.bloco h1{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.bloco p{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff;
+    margin-bottom: 30px;
+}
+
+/*Estilizar section Ajuda*/
+.ajuda {
+    display: flex;
+    align-items: center; 
+    flex-wrap: wrap; 
+    justify-content: center; 
+}
+
+.contAjuda {
+    margin-left: 60px;
+    display: block; 
+    flex: 1; 
+    max-width: 400px;
+}
+
+.contAjuda h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #2BC866;
+    font-size: 2.5rem;
+}
+
+.contAjuda p {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*Estilizar bloco de conteúdo da section Ajuda*/
+.carrosselAjuda {
+    margin-top: 70px;
+    display: flex; 
+    gap: 20px; 
+    padding: 10px; 
+}
+
+/*Estiliza cada caixa de conteúdo da section Ajuda*/
+.box {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden; 
+    width: 200px; 
+    min-height: 150px;
+    background-color: white;
+    border: 1px solid #2BC866; 
+    border-radius: 3px;
+    padding: 10px; 
+    box-sizing: border-box; 
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+.box img{
+    width: 20px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.box h3{
+    color: #2BC866;
+    margin-bottom: 25px;
+    font-size: 16px;
+}
+
+.box ul {
+    padding-left: 20px;
+    list-style-type: disc;
+}
+
+.box ul li {
+    margin-bottom: 5px; 
+}

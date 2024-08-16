@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Aplicar ícone na guia da página-->
+    <link rel="icon" href="./assets/logo.png">
+    <!--Link para as folhas de estilo (CSS)-->
+    <link rel="stylesheet" href="style.css">
+    <title>Ratreio Xpress</title>
+</head>
+<body>
+    <!--MENU-->
+    <nav>
+        <!--Aplicar logo na barra de menu-->
+        <div class="logo">
+            <img src="./assets/logo.png" alt="logo">
+            <p>Rastreio Xpress</p>
+        </div>
+        <!--Aplicar referências para cada parte da página-->
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#sobre">Sobre Nós</a></li>
+            <li><a href="#parcerias">Parceiros</a></li>
+            <li><a href="#ajuda">Ajuda</a></li>
+        </ul>
+        <!--Aplicar botões de login e cadastro-->
+        <div class="navButtons">
+            <a class="btLogin" href="#">
+                <button>Login</button>
+            </a>
+            <a class="btCadastro" href="#">
+                <button>Cadastre-se</button>
+            </a>
+        </div>
+    </nav>
+
+    <!--HOME-->
+    <section class="home" id="home">
+        <h1>Rastreie seu Pedido!</h1>
+        <!--Aplicar caixa de entrada de texto e botão-->
+        <p>
+            <input class="boxHome" type="text" value="Código de rastreamento">
+            <a class="btHome" href="#">
+                <button>Rastrear</button>
+            </a>
+        </p>
+        <img src="./assets/boxes.jpg" alt="boxes">
+    </section>
+
+    <!--SOBRE-->
+    <section class="sobre" id="sobre">
+        <h1>Veja como o Rastreio Express pode facilitar sua rotina</h1>
+        <p>As funcionalidades do Rastreio Express foram desenvolvidas para ajudar você a organizar a rotina logística.</p>
+        <!--Caixas de imagens da seção Sobre-->
+        <div class="imgSobre">
+            <img src="./assets/search.jpg" alt="search">
+            <h3>Busque por uma encomenda</h3>
+            <p>Use o Rastreio Express para encontrar suas encomendas. Basta colar o código de rastreio no campo de buscas e aproveitar</p>
+        </div>
+        <div class="imgSobre">
+            <img src="./assets/phone_loc.jpg" alt="search">
+            <h3>Acompanhe suas encomendas</h3>
+            <p>O Rastreio Express foi desenvolvido para facilitar a visualização de suas encomendas. Nada de atualizações misteriosas e difíceis de entender.</p>
+        </div>
+        <div class="imgSobre">
+            <img src="./assets/notification_bell.jpg" alt="search">
+            <h3>Receba notificações</h3>
+            <p>No Rastreio Express você acompanha tudo o que acontece com a sua encomenda diretamente no seu email.</p>
+        </div>
+        <h2>O Rastreio Express foi desenvolvido especialmente para quem <br>deseja usar uma ferramenta simples e objetiva, sem enrolação.</h2>
+        <!--Aplicar botão Cadastre-se-->
+        <a class="btSobre" href="#">
+            <button>Cadastre-se agora</button>
+        </a>
+    </section>
+
+    <!--PARCERIAS-->
+    <section class="parcerias" id="parcerias">
+        <!--Caixa criada para estilização da cor de fundo-->
+        <div class="bloco">
+            <!--Caixa criada para o conteúdo do bloco-->
+            <div class="contBloco">
+                <h1>A plataforma de rastreamento <br>mais completa do mercado</h1>
+                <p>O Melhor Rastreio controla todos os envios postados na Azul Cargo Express e Correios. <br><br>Porém, quem faz os envios com etiquetas geradas na plataforma do Melhor Envio também consegue <br>rastrear encomendas enviadas pela Jadlog, Buslog, Via Brasil e LATAM Cargo.</p>
+                <!--Aplicar imagens lado a lado-->
+                <div class="imgParcerias">
+                    <img src="./assets/jt_logo.jpg" alt="">
+                    <img src="./assets/azul_logo.jpeg" alt="">
+                    <img src="./assets/buslog_logo.jpeg" alt="">
+                    <img src="./assets/correios_logo.png" alt="">
+                </div>
+            </div>
+            <div class="imgBloco">
+                <img src="./assets/image_green_background.jpg" alt="boxes">
+            </div>
+        </div>
+    </section>
+
+    <!--AJUDA-->
+    <section class="ajuda" id="ajuda">
+        <div>
+            <img src="/assets/need_help.jpg" alt="help">
+        </div>
+        <div class="contAjuda">
+            <h1>Precisa de ajuda <br> com algum ratreio?</h1><br>
+            <p>Veja o que fazer em cada um dos casos:</p>
+        </div>
+        <!--Caixa para aplicação de caixas de conteúdo-->
+        <div class="carrosselAjuda">
+            <!--Conteúdo em cada uma das caixas-->
+            <div class="box">
+                <img src="./assets/hourglass.jpeg" alt="hourglass">
+                <h3>Estou esperando uma <br>encomenda</h3><br>
+                <p>No Rastreio Express você acompanha tudo o que acontece com a sua encomenda diretamente no seu email.</p>
+            </div>
+            <!--Conteúdo em cada uma das caixas-->
+            <div class="box">
+                <img src="./assets/cube.jpeg" alt="cube">
+                <h3>Enviei um pacote com <br>etiqueta do Melhor Envio</h3><br>
+                <p>O remetente é a única pessoa que pode resolver os problemas relacionados ao envio. <br><br> Sugerimos que peça para a pessoa responsável pelo envio entrar em contato com a gente seguindo as instruções para lojistas.</p>
+            </div>
+            <!--Conteúdo em cada uma das caixas-->
+            <div class="box">
+                <img src="./assets/receipt.jpeg" alt="receipt">
+                <h3>Comprei uma etiqueta <br>diretamente com a <br>transportadora</h3><br>
+                <p>É muito fácil encontrar ajuda. Veja só:</p><br>
+                <ul>
+                    <li>Entre na sua conta Melhor Envio</li>
+                    <li>Vá até a opção Ajuda</li>
+                    <li>Escolha o assunto que melhor representa a sua dúvida e encontre o suporte que precisa</li>
+                </ul>
+            </div>
+            <!--Conteúdo em cada uma das caixas-->
+            <div class="box">
+                <img src="./assets/money.jpeg" alt="money">
+                <h3>Eu vou pagar alguma taxa <br>de uso ou mensalidade?</h3><br>
+                <p>Não! O Melhor Rastreio é totalmente gratuito e não cobranenhuma mensalidade ou taxa pelos serviços.</p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
